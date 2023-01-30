@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "aviasales-xml-parsing-task"
+version = "0.1.0"
+description = ""
+authors = ["Yaroslav Pekatoros <y.pekatoros@gmail.com>"]
+readme = "README.md"
+packages = [{include = "aviasales_xml_parsing_task"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+bs4 = "^0.0.1"
+lxml = "^4.9.2"
+
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^6.0.0"
+pytest = "^7.2.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

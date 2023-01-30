@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AirFareSearchResponse RequestTime="28-09-2015 20:23:49" ResponseTime="28-09-2015 20:23:56">
+    <RequestId>123ABCD</RequestId>
+    <PricedItineraries>
+        <Flights>
+            <OnwardPricedItinerary>
+                <Flights>
+                    <Flight>
+                        <Carrier id="AI">AirIndia</Carrier>
+                        <FlightNumber>996</FlightNumber>
+                        <Source>DXB</Source>
+                        <Destination>DEL</Destination>
+                        <DepartureTimeStamp>2018-10-22T0005</DepartureTimeStamp>
+                        <ArrivalTimeStamp>2018-10-22T0445</ArrivalTimeStamp>
+                        <Class>G</Class>
+                        <NumberOfStops>0</NumberOfStops>
+                        <FareBasis>
+                            2820231f40c802-03e6-4655-9ece-0fb1ad670b5c@@$255_DXB_DEL_996_9_00:05_$255_DEL_BKK_332_9_13:50_$255_BKK_DEL_333_9_08:50_$255_DEL_DXB_995_9_20:40__A2_0_0
+                        </FareBasis>
+                        <WarningText/>
+                        <TicketType>E</TicketType>
+                    </Flight>
+                    <Flight>
+                        <Carrier id="AI">AirIndia</Carrier>
+                        <FlightNumber>332</FlightNumber>
+                        <Source>DEL</Source>
+                        <Destination>BKK</Destination>
+                        <DepartureTimeStamp>2018-10-22T1350</DepartureTimeStamp>
+                        <ArrivalTimeStamp>2018-10-22T1935</ArrivalTimeStamp>
+                        <Class>G</Class>
+                        <NumberOfStops>0</NumberOfStops>
+                        <FareBasis>
+                            2820231f40c802-03e6-4655-9ece-0fb1ad670b5c@@$255_DXB_DEL_996_9_00:05_$255_DEL_BKK_332_9_13:50_$255_BKK_DEL_333_9_08:50_$255_DEL_DXB_995_9_20:40__A2_0_0
+                        </FareBasis>
+                        <WarningText/>
+                        <TicketType>E</TicketType>
+                    </Flight>
+                </Flights>
+            </OnwardPricedItinerary>
+            <ReturnPricedItinerary>
+                <Flights>
+                    <Flight>
+                        <Carrier id="AI">AirIndia</Carrier>
+                        <FlightNumber>333</FlightNumber>
+                        <Source>BKK</Source>
+                        <Destination>DEL</Destination>
+                        <DepartureTimeStamp>2018-10-30T0850</DepartureTimeStamp>
+                        <ArrivalTimeStamp>2018-10-30T1205</ArrivalTimeStamp>
+                        <Class>U</Class>
+                        <NumberOfStops>0</NumberOfStops>
+                        <FareBasis>
+                            2820231f40c802-03e6-4655-9ece-0fb1ad670b5c@@$255_DXB_DEL_996_9_00:05_$255_DEL_BKK_332_9_13:50_$255_BKK_DEL_333_9_08:50_$255_DEL_DXB_995_9_20:40__A2_0_0
+                        </FareBasis>
+                        <WarningText/>
+                        <TicketType>E</TicketType>
+                    </Flight>
+                    <Flight>
+                        <Carrier id="AI">AirIndia</Carrier>
+                        <FlightNumber>995</FlightNumber>
+                        <Source>DEL</Source>
+                        <Destination>DXB</Destination>
+                        <DepartureTimeStamp>2018-10-30T2040</DepartureTimeStamp>
+                        <ArrivalTimeStamp>2018-10-30T2245</ArrivalTimeStamp>
+                        <Class>U</Class>
+                        <NumberOfStops>0</NumberOfStops>
+                        <FareBasis>
+                            2820231f40c802-03e6-4655-9ece-0fb1ad670b5c@@$255_DXB_DEL_996_9_00:05_$255_DEL_BKK_332_9_13:50_$255_BKK_DEL_333_9_08:50_$255_DEL_DXB_995_9_20:40__A2_0_0
+                        </FareBasis>
+                        <WarningText/>
+                        <TicketType>E</TicketType>
+                    </Flight>
+                </Flights>
+            </ReturnPricedItinerary>
+            <Pricing currency="SGD">
+                <ServiceCharges type="SingleAdult" ChargeType="BaseFare">117.00</ServiceCharges>
+                <ServiceCharges type="SingleAdult" ChargeType="AirlineTaxes">429.80</ServiceCharges>
+                <ServiceCharges type="SingleAdult" ChargeType="TotalAmount">546.80</ServiceCharges>
+            </Pricing>
+        </Flights>
+        <Flights>
+            <OnwardPricedItinerary>
+                <Flights>
+                    <Flight>
+                        <Carrier id="MH">Malaysia Airlines</Carrier>
+                        <FlightNumber>163</FlightNumber>
+                        <Source>DXB</Source>
+                        <Destination>KUL</Destination>
+                        <DepartureTimeStamp>2018-10-22T1935</DepartureTimeStamp>
+                        <ArrivalTimeStamp>2018-10-23T0705</ArrivalTimeStamp>
+                        <Class>N</Class>
+                        <NumberOfStops>0</NumberOfStops>
+                        <FareBasis>
+                            2820231f40c802-03e6-4655-9ece-0fb1ad670b5c@@$255_DXB_KUL_163_44_19:35_$255_KUL_BKK_5860_44_13:20_$255_BKK_KUL_785_44_11:05_$255_KUL_DXB_162_44_15:15__A2_0_0
+                        </FareBasis>
+                        <WarningText/>
+                        <TicketType>E</TicketType>
+                    </Flight>
+                    <Flight>
+                        <Carrier id="MH">Malaysia Airlines</Carrier>
+                        <FlightNumber>5860</FlightNumber>
+                        <Source>KUL</Source>
+                        <Destination>BKK</Destination>
+                        <DepartureTimeStamp>2018-10-23T1320</DepartureTimeStamp>
+                        <ArrivalTimeStamp>2018-10-23T1430</ArrivalTimeStamp>
+                        <Class>L</Class>
+                        <NumberOfStops>0</NumberOfStops>
+                        <FareBasis>
+                            2820231f40c802-03e6-4655-9ece-0fb1ad670b5c@@$255_DXB_KUL_163_44_19:35_$255_KUL_BKK_5860_44_13:20_$255_BKK_KUL_785_44_11:05_$255_KUL_DXB_162_44_15:15__A2_0_0
+                        </FareBasis>
+                        <WarningText/>
+                        <TicketType>E</TicketType>
+                    </Flight>
+                </Flights>
+            </OnwardPricedItinerary>
+            <ReturnPricedItinerary>
+                <Flights>
+                    <Flight>
+                        <Carrier id="MH">Malaysia Airlines</Carrier>
+                        <FlightNumber>785</FlightNumber>
+                        <Source>BKK</Source>
+                        <Destination>KUL</Destination>
+                        <DepartureTimeStamp>2018-10-30T1105</DepartureTimeStamp>
+                        <ArrivalTimeStamp>2018-10-30T1415</ArrivalTimeStamp>
+                        <Class>N</Class>
+                        <NumberOfStops>0</NumberOfStops>
+                        <FareBasis>
+                            2820231f40c802-03e6-4655-9ece-0fb1ad670b5c@@$255_DXB_KUL_163_44_19:35_$255_KUL_BKK_5860_44_13:20_$255_BKK_KUL_785_44_11:05_$255_KUL_DXB_162_44_15:15__A2_0_0
+                        </FareBasis>
+                        <WarningText/>
+                        <TicketType>E</TicketType>
+                    </Flight>
+                    <Flight>
+                        <Carrier id="MH">Malaysia Airlines</Carrier>
+                        <FlightNumber>162</FlightNumber>
+                        <Source>KUL</Source>
+                        <Destination>DXB</Destination>
+                        <DepartureTimeStamp>2018-10-30T1515</DepartureTimeStamp>
+                        <ArrivalTimeStamp>2018-10-30T1850</ArrivalTimeStamp>
+                        <Class>N</Class>
+                        <NumberOfStops>0</NumberOfStops>
+                        <FareBasis>
+                            2820231f40c802-03e6-4655-9ece-0fb1ad670b5c@@$255_DXB_KUL_163_44_19:35_$255_KUL_BKK_5860_44_13:20_$255_BKK_KUL_785_44_11:05_$255_KUL_DXB_162_44_15:15__A2_0_0
+                        </FareBasis>
+                        <WarningText/>
+                        <TicketType>E</TicketType>
+                    </Flight>
+                </Flights>
+            </ReturnPricedItinerary>
+            <Pricing currency="SGD">
+                <ServiceCharges type="SingleAdult" ChargeType="BaseFare">563.00</ServiceCharges>
+                <ServiceCharges type="SingleAdult" ChargeType="AirlineTaxes">60.80</ServiceCharges>
+                <ServiceCharges type="SingleAdult" ChargeType="TotalAmount">623.80</ServiceCharges>
+            </Pricing>
+        </Flights>
+    </PricedItineraries>
+</AirFareSearchResponse>

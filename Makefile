@@ -23,7 +23,7 @@ test-verbose:
 		poetry run pytest -vv
 
 tests-cov:
-		poetry run pytest --cov=page_analyzer --cov-report xml
+		poetry run pytest --cov=aviasales_xml_parsing_task --cov-report xml
 
 
 .PHONY: install

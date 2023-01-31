@@ -21,6 +21,10 @@ The differences should include:
 
 The language of implementation for the task is Python 3. You may use any libraries and tools."
 
+# Assumtions
+
+We assume what all input XML files consists of all needed tags with correct formated data. In otherway we will see it in sonsole output. We do not implement any logic of data checks inside parser, though if we will need it can be implemented.
+
 # Requirenments
 
 * Linux OS

@@ -1,7 +1,5 @@
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/6caea2c9b61148e0c866/maintainability)](https://codeclimate.com/github/ya-pekatoros/aviasales-test-task/maintainability)
-
-[![Test Coverage](https://api.codeclimate.com/v1/badges/6caea2c9b61148e0c866/test_coverage)](https://codeclimate.com/github/ya-pekatoros/aviasales-test-task/test_coverage)
+[![Maintainability](https://api.codeclimate.com/v1/badges/6caea2c9b61148e0c866/maintainability)](https://codeclimate.com/github/ya-pekatoros/aviasales-test-task/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/6caea2c9b61148e0c866/test_coverage)](https://codeclimate.com/github/ya-pekatoros/aviasales-test-task/test_coverage)
 
 # Description
 
@@ -12,15 +10,16 @@ This package contains the result of an archive test task for a Python developer 
 The Text of the Original Task
 There are two XML files, the results of requests to the API of our partner, via.com.
 
-The task is to parse these files and present a list of differences (in JSON format) between the results of the two requests by the tag Flights. The differences should include:
+The task is to parse these files and present a list of differences (in JSON format) between the results of the two requests by the tag Flights. 
 
-Which flights make up a trip
-The start and end time of a trip
-The price of a trip
-Differences in trip conditions
-Any new trips
+The differences should include:
+* which flights make up a trip
+* the start and end time of a trip
+* the price of a trip
+* differences in trip conditions
+* any new trips
+
 The language of implementation for the task is Python 3. You may use any libraries and tools."
-
 
 # Requirenments
 

@@ -1,12 +1,11 @@
 from bs4 import BeautifulSoup
 import os
-from time import strptime
 
 
-def build_data(file_name, file_dir_path='/aviasales_xml_parsing_task/data_folder/'):
+def build_data(file_name, files_dir_path):
 
     current_dir = os.getcwd()
-    file_path = current_dir + file_dir_path + file_name
+    file_path = current_dir + files_dir_path + file_name
 
     result_data = {}
     # result of parsing will be stored in dictionary for easy access, manipulate and convert in JSON
@@ -29,7 +28,9 @@ def build_data(file_name, file_dir_path='/aviasales_xml_parsing_task/data_folder
         flight number 330 and 331 but first we should use temporary id "i" to fill our dicts with data
         and after we get all flights we will replace "i" for combinations of flights numbers'''
 
-        result_data[i]["single-adult-total-price"] = float(option.find(ChargeType="TotalAmount").string)
+        result_data[i]["single-adult-total-price"] = float(
+            option.find(type="SingleAdult", ChargeType="TotalAmount").string
+        )
         result_data[i]["two-way ticket"] = True if option.find("ReturnPricedItinerary") else False
         onward_flights = option.find("OnwardPricedItinerary").find("Flights")
 
@@ -50,15 +51,8 @@ def build_data(file_name, file_dir_path='/aviasales_xml_parsing_task/data_folder
             result_data[i][flight_id]["flight_number"] = flight_number
             result_data[i][flight_id]["source"] = flight.find("Source").string
             result_data[i][flight_id]["destination"] = flight.find("Destination").string
-
-            result_data[i][flight_id]["departure_time_stamp"] = strptime(
-                flight.find("DepartureTimeStamp").string, '%Y-%m-%dT%H%M'
-            )
-
-            result_data[i][flight_id]["arrival_time_stamp"] = strptime(
-                flight.find("ArrivalTimeStamp").string, '%Y-%m-%dT%H%M'
-            )
-
+            result_data[i][flight_id]["departure_time_stamp"] = flight.find("DepartureTimeStamp").string
+            result_data[i][flight_id]["arrival_time_stamp"] = flight.find("ArrivalTimeStamp").string
             result_data[i][flight_id]["class"] = flight.find("Class").string
             result_data[i][flight_id]["number_of_stops"] = int(flight.find("NumberOfStops").string)
             result_data[i][flight_id]["warning"] = flight.find("WarningText").string

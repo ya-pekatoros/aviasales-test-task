@@ -2,6 +2,9 @@ PARSING_RESULT_1 = {
     "AI-996;AI-332": {
         "single-adult-total-price": 546.80,
         "two-way ticket": True,
+        "the start of the trip": "2018-10-22T0005",
+        "the end of the trip": "2018-10-22T1935",
+        "trip duration": "0 days, 19 hours, 30 minutes",
         "AI-996": {
             "carrier": "AirIndia",
             "carrier_id": "AI",
@@ -32,6 +35,9 @@ PARSING_RESULT_1 = {
     "MH-163;MH-5860": {
         "single-adult-total-price": 623.80,
         "two-way ticket": True,
+        "the start of the trip": "2018-10-22T1935",
+        "the end of the trip": "2018-10-23T1430",
+        "trip duration": "0 days, 18 hours, 55 minutes",
         "MH-163": {
             "carrier": "Malaysia Airlines",
             "carrier_id": "MH",
@@ -65,6 +71,9 @@ PARSING_RESULT_2 = {
     "AI-996;AI-332": {
         "single-adult-total-price": 382.70,
         "two-way ticket": False,
+        "the start of the trip": "2018-10-27T0005",
+        "the end of the trip": "2018-10-27T1920",
+        "trip duration": "0 days, 19 hours, 15 minutes",
         "AI-996": {
             "carrier": "AirIndia",
             "carrier_id": "AI",
@@ -95,6 +104,9 @@ PARSING_RESULT_2 = {
     "CZ-384;CZ-3035": {
         "single-adult-total-price": 385.40,
         "two-way ticket": False,
+        "the start of the trip": "2018-10-27T0140",
+        "the end of the trip": "2018-10-27T1710",
+        "trip duration": "0 days, 15 hours, 30 minutes",
         "CZ-384": {
             "carrier": "China Southern Airlines",
             "carrier_id": "CZ",
@@ -146,10 +158,23 @@ COMPARISON_RESULT = {
             "added arrival_time_stamp": '2018-10-27T1920',
             "Attention! The time of arrival was change by": "4 days, 23 hours, 45 minutes"
         },
+        "added single-adult-total-price": 382.7,
+        "added the start of the trip": "2018-10-27T0005",
+        "added the end of the trip": "2018-10-27T1920",
+        "added two-way ticket": False,
+        "added trip duration": "0 days, 19 hours, 15 minutes",
+        "deleted single-adult-total-price": 546.8,
+        "deleted the start of the trip": "2018-10-22T0005",
+        "deleted the end of the trip": "2018-10-22T1935",
+        "deleted two-way ticket": True,
+        "deleted trip duration": "0 days, 19 hours, 30 minutes"
     },
     "added CZ-384;CZ-3035": {
-        "single-adult-total-price": 385.40,
+        "single-adult-total-price": 385.4,
         "two-way ticket": False,
+        "the start of the trip": "2018-10-27T0140",
+        "the end of the trip": "2018-10-27T1710",
+        "trip duration": "0 days, 15 hours, 30 minutes",
         "CZ-384": {
             "carrier": "China Southern Airlines",
             "carrier_id": "CZ",
@@ -178,8 +203,11 @@ COMPARISON_RESULT = {
         },
     },
     "deleted MH-163;MH-5860": {
-        "single-adult-total-price": 623.80,
+        "single-adult-total-price": 623.8,
         "two-way ticket": True,
+        "the start of the trip": "2018-10-22T1935",
+        "the end of the trip": "2018-10-23T1430",
+        "trip duration": "0 days, 18 hours, 55 minutes",
         "MH-163": {
             "carrier": "Malaysia Airlines",
             "carrier_id": "MH",

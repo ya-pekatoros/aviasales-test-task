@@ -33,4 +33,8 @@ def find_data_differences(data1, data2, differences=None):  # noqa: C901
             else:
                 differences.setdefault(key, find_data_differences(data1[key], data2[key]))
 
+    dif_keys = list(differences.keys())
+    dif_keys = sorted(dif_keys, key=lambda elem: 3 if "deleted" in elem else 2 if "added" in elem else 1)
+    differences = {i: differences[i] for i in dif_keys}
+
     return differences

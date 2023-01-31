@@ -1,5 +1,6 @@
 from bs4 import BeautifulSoup
 import os
+from datetime import datetime
 
 
 def build_data(file_name, files_dir_path):
@@ -34,10 +35,21 @@ def build_data(file_name, files_dir_path):
         result_data[i]["two-way ticket"] = True if option.find("ReturnPricedItinerary") else False
         onward_flights = option.find("OnwardPricedItinerary").find("Flights")
 
+        flights_in_option = onward_flights.find_all("Flight")
+        result_data[i]["the start of the trip"] = flights_in_option[0].find("DepartureTimeStamp").string
+        result_data[i]["the end of the trip"] = flights_in_option[-1].find("ArrivalTimeStamp").string
+        trip_start = datetime.strptime(result_data[i]["the start of the trip"], '%Y-%m-%dT%H%M')
+        trip_end = datetime.strptime(result_data[i]["the end of the trip"], '%Y-%m-%dT%H%M')
+        difference = trip_end - trip_start
+        result_data[i]["trip duration"] = (
+            f"{difference.days} days, {difference.seconds//3600} hours, "
+            f"{(difference.seconds//60)%60} minutes"
+        )
+
         ''' there are only onward flighs in the second data file in this test case, so we don't need
         return flights'''
 
-        for flight in onward_flights.find_all("Flight"):
+        for flight in flights_in_option:
 
             carrier = flight.find("Carrier").string
             carrier_id = flight.find("Carrier").get("id")

@@ -18,6 +18,6 @@ def generate_diff(file_name_1, file_name_2, files_dir_path):
 
     with open(f'{current_dir}/{files_dir_path}/{filename}', "w") as output_file:
         output_file.write(differences)
-        print(f"The result of gendiff in located here: {current_dir + filename}")
+        print(f"The result of gendiff in located here: {current_dir + files_dir_path + filename}")
 
     return

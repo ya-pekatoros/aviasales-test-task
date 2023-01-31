@@ -48,9 +48,16 @@ We assume what all input XML files consists of all needed tags with correct form
 
 # Commands and demonstrations
 
-gendiff file-1-path file-2-path
-    gendiff --h
+flights_parser file-1-full-name file-2-full-name relative-path-to-dir
+    flights_parser --h
+
+The format of inout data is XML. Relative-path-to-dit looks like "/your_folder/your_subfolder/"
 
 The format of output is JSON file. Below you can find some demonstations of how it looks like.
 
+In output you will see all information about flights which has differencies between two files.
+First you'll see flights with changed parameters like time of departure/arrival or conditions of flight. Second you'll see new flights iptions and after options which currently unavailable.
+
 ### Demonstration of works:
+
+The input data and the result you can see in data_folder in these repo.

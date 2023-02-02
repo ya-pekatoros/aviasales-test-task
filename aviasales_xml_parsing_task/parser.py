@@ -1,5 +1,5 @@
-from bs4 import BeautifulSoup
 import os
+from bs4 import BeautifulSoup
 from datetime import datetime
 
 
@@ -15,19 +15,19 @@ def build_data(file_name, files_dir_path):
         soup = BeautifulSoup(file, "lxml-xml")
 
     data = soup.find("PricedItineraries")
-    ''' all needed data stored inside this tag, also there are the the same tag <Flights> on different
-    layers of XML, to extract different flights correct we need to get first the parent <Flight> tag,
-    so we should not make recursive response and what's why we need to go down on the level, where needed
-    tags are places '''
+    # all needed data stored inside this tag, also there are the the same tag <Flights> on different
+    # layers of XML, to extract different flights correct we need to get first the parent <Flight> tag,
+    # so we should not make recursive response and what's why we need to go down on the level, where needed
+    # tags are places
 
     for i, option in enumerate(data.find_all("Flights", recursive=False)):  # we get all flight options here
         option_id_data = []
         result_data[i] = {}
 
-        ''' we store all flights options as a dicts, also, we need uniq id for all options the one of the ways
-        to day it - to present option as combination of flight numbers like "AI-330;AI-331" for Air India
-        flight number 330 and 331 but first we should use temporary id "i" to fill our dicts with data
-        and after we get all flights we will replace "i" for combinations of flights numbers'''
+        # we store all flights options as a dicts, also, we need uniq id for all options the one of the ways
+        # to day it - to present option as combination of flight numbers like "AI-330;AI-331" for Air India
+        # flight number 330 and 331 but first we should use temporary id "i" to fill our dicts with data
+        # and after we get all flights we will replace "i" for combinations of flights numbers
 
         result_data[i]["single-adult-total-price"] = float(
             option.find(type="SingleAdult", ChargeType="TotalAmount").string
@@ -46,8 +46,8 @@ def build_data(file_name, files_dir_path):
             f"{(difference.seconds//60)%60} minutes"
         )
 
-        ''' there are only onward flighs in the second data file in this test case, so we don't need
-        return flights'''
+        # there are only onward flighs in the second data file in this test case, so we don't need
+        # return flights
 
         for flight in flights_in_option:
 

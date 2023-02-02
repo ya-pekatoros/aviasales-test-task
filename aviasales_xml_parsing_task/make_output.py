@@ -1,7 +1,8 @@
-from aviasales_xml_parsing_task.find_difference import find_data_differences
-from aviasales_xml_parsing_task.parser import build_data
 import os
 import json
+
+from aviasales_xml_parsing_task.find_difference import find_data_differences
+from aviasales_xml_parsing_task.parser import build_data
 
 
 def generate_diff(file_name_1, file_name_2, files_dir_path):

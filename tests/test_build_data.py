@@ -1,10 +1,12 @@
 import json
 import os
+
 from aviasales_xml_parsing_task.make_output import generate_diff
 from aviasales_xml_parsing_task import find_data_differences
 from aviasales_xml_parsing_task import build_data
 from aviasales_xml_parsing_task.scripts.flights_parser import parse_args
 from tests.fixtures import expected
+
 
 FIXTURES_PATH = '/tests/fixtures/'
 

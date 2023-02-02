@@ -1,6 +1,7 @@
 #! /usr/bin/env python3
-import argparse
 import sys
+import argparse
+
 from aviasales_xml_parsing_task import generate_diff
 
 

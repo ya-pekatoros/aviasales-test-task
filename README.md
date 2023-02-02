@@ -51,7 +51,7 @@ We assume what all input XML files consists of all needed tags with correct form
 flights_parser file-1-full-name file-2-full-name relative-path-to-dir
     flights_parser --h
 
-The format of inout data is XML. Relative-path-to-dit looks like "/your_folder/your_subfolder/"
+The format of input data is XML. Relative-path-to-dit looks like "/your_folder/your_subfolder/"
 
 The format of output is JSON file. Below you can find some demonstations of how it looks like.
 
